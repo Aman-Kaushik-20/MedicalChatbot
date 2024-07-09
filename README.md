@@ -1,6 +1,8 @@
 # Medical Chatbot GenAI Project
 
-This project is a Flask-based web application designed to provide medical assistance using an AI model. The application uses embeddings from Hugging Face and integrates with Pinecone for similarity search. It utilizes Langchain and CTransformers for language model handling and prompt management.
+![Screenshot 2024-07-09 164048](https://github.com/Aman-Kaushik-20/MedicalChatbot/assets/143441723/35368e99-faa5-4c9a-bfd5-a89fce9d052a)
+ 
+ This project is a Flask-based web application designed to provide medical assistance using an AI model. The application uses embeddings from Hugging Face and integrates with Pinecone for similarity search. It utilizes Langchain and CTransformers for language model handling and prompt management.
 
 ## Table of Contents
 
