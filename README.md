@@ -4,7 +4,7 @@
  
  This project is a Flask-based web application designed to provide medical assistance using an AI model. The application uses embeddings from Hugging Face and integrates with Pinecone for similarity search. It utilizes Langchain and CTransformers for language model handling and prompt management.
 
- # Video Tutorial
+ # Running Tutorial
 Link - https://drive.google.com/file/d/1-0iV3KRrQVijQ6S59LHSdYPPTYnQj3Jp/view?usp=sharing
 
 ## Table of Contents
