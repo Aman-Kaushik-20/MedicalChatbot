@@ -118,7 +118,22 @@ load_dotenv()
 ### Downloading Embeddings
 
 ```python
+
+#download embedding model
+def download_hugging_face_embeddings():
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    return embeddings
+
 embeddings = download_hugging_face_embeddings()
+```
+
+#Creating text chunks
+```python
+def text_split(extracted_data):
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 20)
+    text_chunks = text_splitter.split_documents(extracted_data)
+
+    return text_chunks
 ```
 
 ### Initializing Pinecone
@@ -135,6 +150,27 @@ index_name = "medicalchatbot"
 index = pc.Index(index_name)
 # Wait a moment for connection
 time.sleep(1)
+```
+
+
+### Creating Database
+```python
+from langchain_pinecone import PineconeVectorStore
+
+index_name = "medicalchatbot"
+#docs_content
+docs_content = [doc.page_content for doc in text_chunks]
+
+# Connect to the index
+index = pc.Index(index_name)
+embeddings
+
+docsearch = PineconeVectorStore.from_documents(
+    documents=text_chunks,
+    index_name=index_name,
+    embedding=embeddings, 
+    namespace="namespace"
+)
 ```
 
 ### Function to Retrieve Data from Database
