@@ -29,7 +29,7 @@ Link - https://drive.google.com/file/d/1-0iV3KRrQVijQ6S59LHSdYPPTYnQj3Jp/view?us
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/medical-chatbot-genai.git
+   git clone https://github.com/Aman-Kaushik-20/medical-chatbot-genai.git
    cd medical-chatbot-genai
    ```
 
