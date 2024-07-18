@@ -127,7 +127,7 @@ def download_hugging_face_embeddings():
 embeddings = download_hugging_face_embeddings()
 ```
 
-#Creating text chunks
+### Creating text chunks
 ```python
 def text_split(extracted_data):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size = 500, chunk_overlap = 20)
