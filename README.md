@@ -7,6 +7,9 @@
  # Running Tutorial
 Link - https://drive.google.com/file/d/1-0iV3KRrQVijQ6S59LHSdYPPTYnQj3Jp/view?usp=sharing
 
+![image](https://github.com/user-attachments/assets/2151c4b1-d733-4f4d-929d-de1b03d082fe)
+
+
 ## Table of Contents
 
 1. [Features](#features)
