@@ -1,6 +1,8 @@
 # Medical Chatbot GenAI Project
 
-https://github.com/user-attachments/assets/d501cef4-2139-44de-9003-802b249da11d
+
+https://github.com/user-attachments/assets/f6d6621e-44f3-4009-a250-de7ef8823ed4
+
 
 ![image](https://github.com/user-attachments/assets/2151c4b1-d733-4f4d-929d-de1b03d082fe)
 
