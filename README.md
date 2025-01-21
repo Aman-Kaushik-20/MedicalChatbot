@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/f6d6621e-44f3-4009-a250-de7ef8823ed4
 ![image](https://github.com/user-attachments/assets/2151c4b1-d733-4f4d-929d-de1b03d082fe)
 
 
-## Table of Contents
+## 1. Table of Contents
 
 1. [Features](#features)
 2. [Installation](#installation)
@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/f6d6621e-44f3-4009-a250-de7ef8823ed4
 6. [Dependencies](#dependencies)
 7. [License](#license)
 
-## Features
+## 2. Features
 
 - **Flask Web Framework**: For serving web pages and handling API requests.
 - **Hugging Face Embeddings**: Used for embedding queries.
@@ -25,18 +25,7 @@ https://github.com/user-attachments/assets/f6d6621e-44f3-4009-a250-de7ef8823ed4
 - **Langchain**: For handling prompt templates.
 - **CTransformers**: For local language model inference.
 
-## Installation
 
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/Aman-Kaushik-20/medical-chatbot-genai.git
-   cd medical-chatbot-genai
-   ```
-
-2. **Install the required packages**:
-   ```sh
-   pip install -r requirements.txt
-   ```
 
 3. **Set up Pinecone**:
    - Create an account on Pinecone and get your API key.
@@ -47,23 +36,13 @@ https://github.com/user-attachments/assets/f6d6621e-44f3-4009-a250-de7ef8823ed4
    - Add the required environment variables (see below).
 
 ## Environment Variables
-
-Create a `.env` file in the root directory and add the following variables:
-
 ```
 PINECONE_API_KEY=your_pinecone_api_key
 ```
 
 ## Usage
 
-1. **Run the Flask application**:
-   ```sh
-   python app.py
    ```
-
-2. **Access the application**:
-   - Open your browser and go to `http://localhost:8000`.
-
 ## File Structure
 
 ```
@@ -90,9 +69,6 @@ medical-chatbot-genai/
 - **CTransformers**: For local language model inference
 - **SentenceTransformers**: For sentence embedding
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Detailed Code Explanation
 
@@ -247,24 +223,3 @@ def medical_answer(query):
     return final_result
 ```
 
-### Flask Routes
-
-```python
-@app.route("/")
-def index():
-    return render_template('chat.html')
-
-@app.route("/get", methods=["GET", "POST"])
-def chat():
-    msg = request.form["msg"]
-    input = msg
-    print(input)
-    result = medical_answer(input)
-    print("Response: ", result)
-    return str(result)
-
-if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=8000, debug=True)
-```
-
-This README file includes all the necessary details to understand, install, and run the project effectively.
