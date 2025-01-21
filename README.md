@@ -43,27 +43,8 @@ PINECONE_API_KEY=your_pinecone_api_key
 ## Usage
 
    ```
-## File Structure
-
-```
-medical-chatbot-genai/
-│
-├── src/
-│   └── helper.py            # Contains the function to download Hugging Face embeddings
-│
-├── templates/
-│   └── chat.html           # HTML template for the chat interface
-│
-├── .env                    # Environment variables file
-├── app.py                  # Main application file
-├── requirements.txt        # List of Python packages required
-└── README.md              # Project documentation
-
-```
-
 ## Dependencies
 
-- **Flask**: Web framework
 - **Hugging Face Embeddings**: For embedding queries
 - **Pinecone**: Vector database for similarity search
 - **Langchain**: For handling prompt templates
@@ -83,13 +64,6 @@ from dotenv import load_dotenv
 import os
 from scipy.stats import fisher_exact
 from sentence_transformers import SentenceTransformer
-```
-
-### Initializing Flask Application
-
-```python
-app = Flask(__name__)
-load_dotenv()
 ```
 
 ### Downloading Embeddings
