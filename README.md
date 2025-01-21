@@ -52,12 +52,13 @@ medical-chatbot-genai/
 │   └── helper.py            # Contains the function to download Hugging Face embeddings
 │
 ├── templates/
-│   └── chat.html            # HTML template for the chat interface
+│   └── chat.html           # HTML template for the chat interface
 │
-├── .env                     # Environment variables file
-├── app.py                   # Main application file
-├── requirements.txt         # List of Python packages required
-└── README.md                # This README file
+├── .env                    # Environment variables file
+├── app.py                  # Main application file
+├── requirements.txt        # List of Python packages required
+└── README.md              # Project documentation
+
 ```
 
 ## Dependencies
